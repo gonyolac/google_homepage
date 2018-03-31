@@ -1,24 +1,44 @@
+#app_menu {
+  padding: 0px 10px;
+  top: 0px;
+  height: 15px;
+  width: 15px;
+}
+
 div {
   text-align: center;
 }
 
 button {
-  font-family: Calibri;
-  font-size: 15px;
+  font-family: Arial;
+  font-size: 13px;
   padding: 10px 15px;
   opacity: 0.5;
   width: auto;
   font-weight: bold;
 }
 
+.sign_in {
+  position: inline-block;
+  border: 1px solid #4285f4;
+  border-radius: 2px;
+  background: #4285f4;
+  padding: 0px 10px;
+  color: #fff;
+  opacity: 1;
+  line-height: 28px;
+}
+
 button:hover {
   opacity: 1;
+  border-radius: 2px;
 }
 
 img {
-  display: block;
+  position: relative;
   height: 100px;
   width: 300px;
+  bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,6 +47,7 @@ input {
   font-size: 20px;
   box-sizing: border-box;
   padding: 10px 10px;
+  padding-right: 20px;
   height: 40px;
   width: 500px;
 }
@@ -39,22 +60,42 @@ ul {
   background-color: white;
 }
 
+#main {
+  position: absolute;
+  top: 150px;
+  left: 30%;
+}
+
 .left_bot_navbar {
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100;
-  text-align: left;
+}
+
+.left_top_navbar {
+  overflow: hidden;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 100;
 }
 
 .right_bot_navbar {
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
   width: 100;  
-  text-align: right;
+}
+
+.right_top_navbar {
+  overflow: hidden;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 100;
 }
 
 li {
